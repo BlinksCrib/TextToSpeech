@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar{
+  width: 5px;
+}
+::-webkit-scrollbar-track{
+  border: none;
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(92, 55, 255, 0.979);
+  height: 1.5rem !important;
+  border-radius: 3px;
+}
+main{
+    background-color: rgb(255, 255, 255);
+    height: 500px;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 5px rgba(54, 22, 109, 0.138);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+.cent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    /* overflow: hidden !important; */
+}
+.title{
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(48, 48, 48);
+}
+.text-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+.text-title, .voice-title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(36, 36, 36);
+    align-items: flex-start;
+}
+#voice{
+    height: 3rem;
+    width: 20rem;
+    border: none;
+    outline: 2px solid rgba(128, 128, 128, 0.623);
+    border-radius: 0.4rem;
+    padding: 0px 10px;
+}
+#text{
+    height: 7rem;
+    width: 20rem;
+    border: none;
+    outline: 2px solid rgba(128, 128, 128, 0.623);
+    border-radius: 0.5rem;
+    resize: none;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 8px 10px;
+}
+.voice-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.submit{
+    background-color: rgba(92, 55, 255, 0.979);
+    color: white;
+    width: 20rem;
+    height: 3rem;
+    border-radius: 0.3rem;
+    font-size: 1.2rem;
+    border: none;
+}
+@media screen and (max-width:445px) {
+    main{
+        width: 350px;
+    }
+    #text, #voice, .submit{
+        width: 18rem;
+    }
+    #voice{
+        padding: 0px 6px;
+    }
+}
+@media screen and (max-width:400px) {
+    main{
+        width: 300px;
+    }
+    #text, #voice, .submit{
+        width: 15rem;
+    }
+}
+@media screen and (max-width: 345px) {
+    main{
+        width: 280px;
+    }
+    #text, #voice, .submit{
+        width: 13rem;
+    }
+    .title{
+        font-size: 1.5rem;
+    }
+    #voice{
+        padding: 0px 4px;
+    }
+}
+@media screen and (max-width: 320px) {
+    main{
+        width: 250px;
+    }
+    #text, #voice, .submit{
+        width: 12rem;
+    }
+    #voice{
+        padding: 0px 2px;
+    }
+}
